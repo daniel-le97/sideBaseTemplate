@@ -23,7 +23,7 @@ Some tasks you should probably do in the beginning are:
 - [ ] Prisma: Run `npx prisma db push` to sync the schema to your database after changing the schema
 - [ ] Prisma: Run `npx prisma generate` to re-generate the client after changing the schema
 - [ ] Auth: Configure your auth providers to the [NuxtAuthHandler](./server/api/auth/[...].ts)
-- [ ] Auth, optional: Enable global protection by setting `enableGlobalAppMiddleware: true` in [your nuxt.config.ts](./nuxt.config.ts). Delete the logal middleware in the [protected.vue](./pages/protected.vue) page if you do
+- [ ] Auth, optional: Enable global protection by setting `enableGlobalAppMiddleware: true` in [your nuxt.config.ts](./nuxt.config.ts). Delete the local middleware in the [protected.vue](./pages/protected.vue) page if you do
 
 ### Setup
 

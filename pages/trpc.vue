@@ -1,12 +1,12 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 const { $client } = useNuxtApp()
-
-const hello = await $client
+const hello = $client.example.findMany.useQuery({})
 </script>
 
 <template>
   <div>
-    <!-- As `superjson` is already pre-configured, we can use `time` as a `Date` object without further deserialization 🎉 -->
-    <p>tRPC Data: "{{ hello.data.value?.greeting }}" send at "{{ hello.data.value?.time.toLocaleDateString() }}".</p>
+    data : {{ hello }}
   </div>
 </template>
+
+<style scoped></style>
